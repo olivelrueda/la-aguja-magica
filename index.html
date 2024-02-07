@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="arreglos de ropa La Aguja Mágica">
+    <meta name="keywords" content="arreglos de ropa, costura, moda, La Aguja Mágica, Sandra Morejón">
+    <meta name="author" content="Olivel Rueda">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>La Aguja Mágica</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="./icons/sewingMachine.svg" alt="logo de La Aguja Mágica" class="sewing">
+            <h1>La Aguja Mágica</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">Acerca de</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#testimonials">Testimonios</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="front">
+        <h2>Con aguja, hilo y dedicación,<br><span>todo es posible.</span></h2>
+    </section>
+
+    <section id="about">
+        <div class="story">
+            <h2>¿Quién soy?</h2>
+            <p>Soy  Sandra Morejón, costurera cubana con más de 20 años de experiencia en arreglos y composturas de ropa. Resido en Madrid, mi nuevo hogar, desde hace 30 años. <span class="mission">Mi misión: Mejorar tus prendas para que puedas estrenarlas como la primera vez.</span><span class="welcome">¡Bienvenido a mi web!</span></p>
+        </div>
+        <div class="sandra">
+            <img src="./images/tailor.jpg" alt="Sandra Morejón, dueña de La Aguja Mágica">
+        </div>
+    </section>
+
+    <section id="services">
+        <article>
+            <h2>¿En qué te ayudo?</h2>
+            <div class="description">
+                <h3>Arreglos de ropa</h3>
+                <p>Desde dobladillos y cremalleras hasta la meticulosa reparación de botones y descosidos. Siente la confianza que solo una prenda cuidadosamente ajustada puede brindar.</p>
+            </div>
+            <div class="slider">
+                <img src="./images/repair1.jpg" alt="Ropa terminada lista para ser entregada">
+                <img src="./images/repair2.jpg" alt="Sandra cociendo una sábana">
+                <img src="./images/repair3.jpg" alt="Hilos de muchos tamaños">
+                <img src="./images/repair4.jpg" alt="Sandra cortando una falda">
+                <img src="./images/repair5.jpg" alt="Vestier de la tienda">
+            </div>
+        </article>
+
+        <article>
+            <div class="description">
+                <h3>Arreglos en piel</h3>
+                <p>¿Posees prendas de cuero que necesitan atención especial? Has llegado al lugar correcto. Realza la elegancia y durabilidad que otorga un cuero genuino.</p>
+            </div>
+            <div class="slider">
+                <img src="./images/leather1.jpg" alt="Saco de cuero puesto en un maniquí">
+                <img src="./images/leather2.jpg" alt="Sandra cortando el cuero con un exacto">
+                <img src="./images/leather3.jpg" alt="Lonas de cuero amarillo">
+                <img src="./images/leather4.jpg" alt="Sandra cosiendo una chaqueta de cuero con la máquina">
+                <img src="./images/leather5.jpg" alt="Piel con textura de cocodrilo">
+            </div>
+        </article>
+
+        <article>
+            <div class="description">
+                <h3>Lavandería y tintotería</h3>
+                <p>Cuando se trata de cuidar tus trajes, vestidos o sábanas, nuestro lavado ecológico en seco garantiza que tus prendas mantengan su color, forma y suavidad originales.</p>
+            </div>
+            <div class="slider">
+                <img src="./images/laundry1.jpg" alt="Lavadora lavando ropa">
+                <img src="./images/laundry2.jpg" alt="Trajes listos para ser entregados">
+                <img src="./images/laundry3.jpg" alt="Suéteres recién lavados">
+                <img src="./images/laundry4.jpg" alt="Camisas lavadas y planchadas">
+                <img src="./images/laundry5.jpg" alt="Ropa limpia doblada">
+            </div>
+        </article>
+    </section>
+
+    <section id="testimonials">
+        <div class="testimonialsContainer">
+            <div class="reel">
+                <a href="#" class="arrowSide" onclick="changeTestimonial(-1)"><img src="./icons/lessThan.svg" alt="ícono de menor que"></a>
+                <div class="clientsContainer">
+                    <img src="./images/client1.jpg" class="active" alt="Clienta recibiendo su ropa lista de Sandra">
+                    <img src="./images/client2.jpg" alt="Chica jóven con su vestido en la mano">
+                    <img src="./images/client3.jpg" alt="Señora riendo en el mostrador junto a Sandra">
+                    <img src="./images/client4.jpg" alt="Caballero sosteniendo su pantalón recién tallado">
+                    <img src="./images/client5.jpg" alt="Jóven cliente satisfecho con su arreglo">
+                </div>
+                <a href="#" class="arrowSide" onclick="changeTestimonial(1)"><img src="./icons/greaterThan.svg" alt="ícono de mayor que"></a>
+            </div>
+            <div class="quoteContainer">
+                <h2>¿Por qué contratarme?</h2>
+                <p id="testimonialText"></p>
+            </div>
+        </div>
+        <a href="#" class="arrowUp"><img src="./icons/arrowUp.svg" alt="Ícono de flecha hacia arriba"></a>
+    </section>    
+
+    <footer id="contact">
+            <address class="numberContainer">
+                <h2>Contáctame</h2>
+                <div class="number">
+                    <img src="./icons/whatsapp.svg" alt="ícono de WhatsApp">
+                    <a href="tel:+34633451046">+34633451046</a>
+                </div>
+                <div class="mail">
+                    <img src="./icons/mail.svg" alt="ícono de correo electrónico">
+                    <a href="mailto:arreglosagujamagica@gmail.com">arreglosagujamagica@gmail.com</a>
+                </div>
+            </address>
+
+            <address class="timeContainer">
+                <div class="time">
+                    <img src="./icons/clock.svg" alt="ícono de reloj">
+                    <ul class="schedule">
+                        <li>Lunes: 5:00 - 20:30</li>
+                        <li>Martes: 10:00 - 14:00 | 17:00 - 20:30</li>
+                        <li>Miércoles: 10:00 - 14:00 | 17:00 - 20:30</li>
+                        <li>Jueves:10:00 - 14:00 | 17:00 - 20:30</li>
+                        <li>Viernes: 10:00 - 14:00 | 17:00 - 20:30</li>
+                        <li>Sábado: 10:00 - 17:00</li>
+                        <li>Domingo: <span class="closed">Cerrado</span></li>
+                    </ul>
+                </div>
+            </address>
+
+            <address class="ubicationContainer">
+                <div class="ubication">
+                    <img src="./icons/ubication.svg" alt="ícono de ubicación">
+                    <p>Calle Torre Arias 23, Canillejas, 28022 Madrid.</p>
+                </div>
+                <div class="mapContainer">
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.3444721841115!2d-3.6139027252470366!3d40.445512153889055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422f274046cda5%3A0x78b18a054282ae05!2sLa%20Aguja%20M%C3%A1gica!5e0!3m2!1ses!2ses!4v1704814036134!5m2!1ses!2ses" width="500" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </address>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
